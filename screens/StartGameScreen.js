@@ -12,7 +12,7 @@ const StartGameScreen = props => {
             <Text style={styles.title}>Start a New Game!</Text>
             <Card style={styles.inputContainer}>
                 <Text>Select a Number</Text>
-                <Input />
+                <Input style={styles.input} />
                 <View style={styles.buttonContainer}>
                     <View style={styles.button}>
                         <Button title="Reset" onPress={() => {}} color={Colors.primary}/>
@@ -48,7 +48,10 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15
     },
     button: {
-        width: 100
+        width: 100,
+    },
+    input: {
+        minWidth: 50,
     }
 });
 
