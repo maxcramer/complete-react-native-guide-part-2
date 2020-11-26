@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Button, TouchableWithoutFeedback, Keyboard, Ale
 
 import Card from '../components/Card';
 import Input from '../components/Input';
+import NumberContainer from '../components/NumberContainer';
 
 import Colors from '../constants/colors';
 
@@ -37,6 +38,8 @@ const StartGameScreen = props => {
         confirmedOutput = (
         <Card style={styles.summaryContainer}>
             <Text>You Selected</Text>
+        <NumberContainer>{selectedNumber}</NumberContainer>
+        <Button title="Start Game" /> 
         </Card> 
         )
     }
